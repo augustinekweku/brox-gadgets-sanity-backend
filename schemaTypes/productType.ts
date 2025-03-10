@@ -1,5 +1,5 @@
 import {defineField, defineType} from 'sanity'
-import {CATEGORIES, PRODUCT_CONDITIONS} from '../utils/constants'
+import {CATEGORIES, PRODUCT_CONDITIONS, PRODUCT_PUBLISH_STATUS} from '../utils/constants'
 
 export const productType = defineType({
   name: 'product',
@@ -84,6 +84,25 @@ export const productType = defineType({
       name: 'body',
       type: 'array',
       of: [{type: 'block'}],
+    }),
+
+    //product status field
+    defineField({
+      name: 'publishStatus',
+      type: 'string',
+      options: {
+        list: [
+          {
+            title: PRODUCT_PUBLISH_STATUS.published.name,
+            value: PRODUCT_PUBLISH_STATUS.published.value,
+          },
+          {
+            title: PRODUCT_PUBLISH_STATUS.archived.name,
+            value: PRODUCT_PUBLISH_STATUS.archived.value,
+          },
+        ],
+      },
+      validation: (rule) => rule.required(),
     }),
   ],
 })
