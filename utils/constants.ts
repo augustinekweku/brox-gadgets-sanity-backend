@@ -3,41 +3,55 @@ export const CATEGORIES = {
     name: 'Laptops',
     description: 'All the best laptops',
     value: 'laptops',
+    banner: '/images/slider-3.jpeg',
+  },
+  macbooks: {
+    name: 'Macbooks',
+    description: 'All the best macbooks',
+    value: 'macbooks',
+    banner: '/images/slider-3.jpeg',
+  },
+  desktops: {
+    name: 'Desktops',
+    description: 'All the best desktops',
+    value: 'desktops',
+    banner: '/images/slider-3.jpeg',
   },
   phones: {
-    name: 'Mobile Phones',
+    name: 'Phones',
     description: 'All the best phones',
     value: 'phones',
+    banner: '/images/brox-phones.png',
   },
   tablets: {
     name: 'Tablets',
     description: 'All the best tablets',
     value: 'tablets',
+    banner: '/images/tablet-banner.png',
   },
-  headphones: {
-    name: 'Headphones',
-    description: 'All the best headphones',
+  headsets: {
+    name: 'Headsets',
+    description: 'All the best headsets',
     value: 'headphones',
+    banner: '/images/headphones-banner.png',
   },
   earbuds: {
     name: 'Earbuds',
     description: 'All the best earbuds',
     value: 'earbuds',
+    banner: '/images/slider-2.jpeg',
+  },
+  consoles: {
+    name: 'Gaming Consoles',
+    description: 'All the best gaming consoles',
+    value: 'consoles',
+    banner: '/images/slider-4.jpeg',
   },
   accessories: {
     name: 'Accessories',
     description: 'All the best accessories',
     value: 'accessories',
-  },
-  consoles: {
-    name: 'Consoles',
-    description: 'All the best consoles',
-    value: 'consoles',
-  },
-  clothing: {
-    name: 'Clothing',
-    description: 'All the best clothing',
-    value: 'clothing',
+    banner: '/images/slider-5.jpeg',
   },
 }
 

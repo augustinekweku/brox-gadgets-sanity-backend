@@ -44,16 +44,10 @@ export const productType = defineType({
       name: 'category',
       type: 'string',
       options: {
-        list: [
-          {title: CATEGORIES.phones.name, value: CATEGORIES.phones.value},
-          {title: CATEGORIES.laptops.name, value: CATEGORIES.laptops.value},
-          {title: CATEGORIES.tablets.name, value: CATEGORIES.tablets.value},
-          {title: CATEGORIES.headphones.name, value: CATEGORIES.headphones.value},
-          {title: CATEGORIES.earbuds.name, value: CATEGORIES.earbuds.value},
-          {title: CATEGORIES.accessories.name, value: CATEGORIES.accessories.value},
-          {title: CATEGORIES.consoles.name, value: CATEGORIES.consoles.value},
-          {title: CATEGORIES.clothing.name, value: CATEGORIES.clothing.value},
-        ],
+        list: Object.values(CATEGORIES).map((category) => ({
+          title: category.name,
+          value: category.value,
+        })),
       },
       validation: (rule) => rule.required(),
     }),
