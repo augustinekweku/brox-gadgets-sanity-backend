@@ -5,12 +5,6 @@ export const CATEGORIES = {
     value: 'laptops',
     banner: '/images/slider-3.jpeg',
   },
-  macbooks: {
-    name: 'Macbooks',
-    description: 'All the best macbooks',
-    value: 'macbooks',
-    banner: '/images/slider-3.jpeg',
-  },
   desktops: {
     name: 'Desktops',
     description: 'All the best desktops',
